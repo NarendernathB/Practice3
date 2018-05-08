@@ -1,0 +1,162 @@
+/* CSS Reset Lines */
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, li {
+	margin: 0;
+	padding: 0;
+}
+
+/* end of CSS Reset Lines */
+
+.clearfix:after {
+	display: block;
+	content: '';
+	clear: both;
+
+}
+
+.container {
+	padding-left: 64px;
+	padding-right: 64px;
+}
+
+section h2{
+	margin:0 0 1em;
+	font-size: 2.5em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section h3{
+  margin: 0 0 0.5em;
+  font-weight: bold;
+
+}
+
+.button{
+	display: inline-block;
+	border: 1px solid;
+	padding: 10px 15px;
+	border-radius: 10px;
+  text-decoration: none;
+}
+
+.button:hover{
+	background: #00ffff;
+	color: #ffff00;
+}
+
+/* Header */
+
+#header {
+	height: 40px;
+
+	padding-left: 64px;
+	padding-right: 64px;
+
+	background-color: #000;
+}
+
+.logo {
+	float: left;
+}
+
+.logo-image{
+	height: 40px;
+	width: auto;
+}
+
+.nav {
+	float: right;
+}
+
+.nav li{
+	float: left;
+	list-style-type: none;
+}
+
+.nav a {
+	display: inline-block;
+	padding: 12px;
+	color: #fff;
+
+  text-decoration: none;
+}
+
+.nav a:hover {
+	color: #ff9d00;
+}
+
+/* Home page background */
+
+.home_bg {
+  background-image: url(../images/Naren.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.center-text {
+	margin: auto;
+	color: #ffffff;
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+/* Second Section */
+
+.summary{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.col-left{
+	width: 50%;
+}
+
+.col-right{
+	width: 50%;
+	padding: 40px;
+}
+
+.avatar{
+	width: 100%;
+	height: auto;
+}
+
+.skills {
+	margin: 2em 0;
+
+}
+
+
+
+
