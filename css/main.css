@@ -35,6 +35,8 @@ p, ul, ol, li {
 }
 
 section h2{
+	padding-top: 100px;
+
 	margin:0 0 1em;
 	font-size: 2.5em;
 	text-align: center;
@@ -69,6 +71,12 @@ section h3{
 	padding-right: 64px;
 
 	background-color: #000;
+
+	position: fixed;
+	width: 100%;
+
+  /*position: relative;*/
+	z-index: 2;
 }
 
 .logo {
@@ -104,6 +112,9 @@ section h3{
 /* Home page background */
 
 .home_bg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
   background-image: url(../images/Naren.jpg);
   background-size: cover;
   background-position: center;
@@ -114,7 +125,7 @@ section h3{
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  /*background: rgba(0, 0, 0, 0.5);*/
   position: absolute;
   left: 0;
   top: 0;
@@ -123,11 +134,12 @@ section h3{
 }
 
 .center-text {
+
 	margin: auto;
 	color: #ffffff;
-	display: flex;
-	height: 100%;
-	width: 100%;
+	font-size: 2em;
+	position: relative;
+	z-index: 1;
 }
 
 /* Second Section */
@@ -157,6 +169,120 @@ section h3{
 
 }
 
+/* Third Section - What I Offer */
+.my-services {
+	background-color: #eeeeee;
+  padding-bottom: 30px;
 
+}
+
+.service-content{
+	float: left;
+	width: 33%;
+	background-color: #eeeeee;
+}
+
+.srv1 {
+	font-size: 20px;
+	padding-bottom: 30px;
+}
+
+.srv2 {
+	font-size: 20px;
+	padding-bottom: 30px;
+}
+
+.srv3 {
+	font-size: 20px;
+	padding-bottom: 30px;
+}
+
+
+
+/* 4th Section - My Resume */
+.my-resume{
+	float:left;
+  flex-direction: column;
+  padding-bottom: 50px;
+
+}
+
+
+.resume-container{
+	float: left;
+	width: 50%;
+
+}
+
+.year {
+	background-color: #000000;
+	color: #ffffff;
+
+}
+
+/* 5th Section - My Quotes */
+.quotes-bg {
+	display: flex;
+	justify-content: center;
+  background-image: url(../images/resumepic.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.quote-center {
+  margin: auto;
+	color: #ffffff;
+	font-size: 1em;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+
+/* 6th Section - My Latest Jobs */
+.job-col{
+	float:left;
+	width: 33%;
+
+
+}
+
+.job-col a {
+  display: block;
+  margin-bottom: 14px;
+  position: relative;
+
+  top: 0;
+  left: 0;
+
+}
+
+.job-col img{
+	width: 300px;
+	height: 300px;
+
+}
+
+.job-col a:hover {
+  box-shadow: 0 16px 22px 0 rgba(90, 91, 95, 0.3);
+  top: -5px;
+}
+
+/* Contact Form */
+.contact-form {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form .form-input {
+  float: left;
+  width: 50%;
+  padding: 0 15px;
+}
 
 
