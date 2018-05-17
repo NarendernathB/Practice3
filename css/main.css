@@ -58,8 +58,8 @@ section h3{
 }
 
 .button:hover{
-	background: #00ffff;
-	color: #ffff00;
+	background: #0000ff;
+	color: #ffffff;
 }
 
 /* Header */
@@ -147,7 +147,7 @@ section h3{
 .summary{
 	display: flex;
 	flex-direction: row;
-
+  flex-wrap: wrap;
 }
 
 .col-left{
@@ -215,8 +215,11 @@ section h3{
 }
 
 .year {
-	background-color: #000000;
-	color: #ffffff;
+    background-color: #000000;
+    color: #ffffff;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
@@ -262,8 +265,10 @@ section h3{
 }
 
 .job-col img{
-	width: 300px;
-	height: 300px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
 
 }
 
@@ -274,15 +279,88 @@ section h3{
 
 /* Contact Form */
 .contact-form {
-  width: 65%;
+	display:block;
+  width: 100%;
+  min-width: 0;
   margin: 0 auto;
   text-align: center;
 }
+
 
 .contact-form .form-input {
   float: left;
   width: 50%;
   padding: 0 15px;
+  padding-bottom: 50px;
 }
 
+.form-style {
+	display: inline-block;
+	border: none;
+	border-bottom: 1px solid;
+	padding: 10px 15px;
+	outline: none;
+  width: 100%;
 
+	/*border-radius: 10px;*/
+
+}
+
+  /* Tablet and mobile */ 
+
+  @media screen and (min-width: 921px) and (max-width: 1000px) {
+  	.container{
+  		padding: 100px 40px;
+  	}
+  }
+
+  @media screen and ( max-width: 450px) { 
+    .job-col {
+  	  width: 100%;
+    }
+  }
+
+  @media screen and ( max-width: 920px) { 
+
+   .col-left,
+   .col-right{
+	   width: 100%;
+  } 
+
+  .col-right{
+  	padding-left: 0;
+  	padding-top: 40px;
+  }
+
+  .service-content{
+  	width: 100%;
+  	padding: 0;
+  	margin-top: 2.5em;
+    text-align: center;
+
+  }
+
+  .resume-container{
+  	width: 100%;
+  	padding: 0;
+  	margin-top: 2.5em;
+  	margin-bottom: ;
+  	padding-left: 20px;
+
+  }
+
+  .job-col {
+  	width: 50%;
+  }
+
+  .contact-form{
+  	width: 100%;
+  	min-width: 0;
+
+  }
+  .contact-form .form-input {
+  	width: 100%;
+    float:none;
+    padding-bottom: 20px;
+  }
+}
