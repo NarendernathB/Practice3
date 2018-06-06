@@ -30,12 +30,13 @@ p, ul, ol, li {
 }
 
 .container {
+  clear: both;
 	padding-left: 64px;
 	padding-right: 64px;
 }
 
 section h2{
-	padding-top: 100px;
+	padding-top: 10px;
 
 	margin:0 0 1em;
 	font-size: 2.5em;
@@ -79,6 +80,7 @@ section h3{
 	z-index: 2;
 }
 
+
 .logo {
 	float: left;
 }
@@ -115,7 +117,7 @@ section h3{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-  background-image: url(../images/Naren.jpg);
+  background-image: url("../images/Ocean with moving waves.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -137,6 +139,7 @@ section h3{
 
 	margin: auto;
 	color: #ffffff;
+  text-shadow: 2px 2px #0f0f0f;
 	font-size: 2em;
 	position: relative;
 	z-index: 1;
@@ -166,7 +169,14 @@ section h3{
 
 .skills {
 	margin: 2em 0;
+  list-style-type: none;
 
+}
+
+.subtitle{
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 /* Third Section - What I Offer */
@@ -175,26 +185,49 @@ section h3{
   padding-bottom: 30px;
 
 }
+.row-container{
+    background-color: #eeeeee;
+}
+
+.service-content:before {
+  clear: both;
+  display: flex;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+}
 
 .service-content{
 	float: left;
-	width: 33%;
+  width: 33%;
 	background-color: #eeeeee;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  text-justify: inter-word;
 }
+
+
 
 .srv1 {
 	font-size: 20px;
 	padding-bottom: 30px;
+
 }
 
 .srv2 {
 	font-size: 20px;
 	padding-bottom: 30px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .srv3 {
 	font-size: 20px;
 	padding-bottom: 30px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 
@@ -214,7 +247,11 @@ section h3{
 
 }
 
-.year {
+.resume-items{
+  padding-bottom: 50px;
+}
+
+.name{
     background-color: #000000;
     color: #ffffff;
     display: inline-block;
@@ -306,21 +343,41 @@ section h3{
 
 }
 
+.job-image {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center center;
+  transition: all .5s ease;
+}
+
+.stamp-image{
+  width: 50px;
+  height: 50px;
+
+}
   /* Tablet and mobile */ 
 
-  @media screen and (min-width: 921px) and (max-width: 1000px) {
+
+
+/*  @media screen and (min-width: 768px) and (max-width: 1000px) {
   	.container{
   		padding: 100px 40px;
   	}
-  }
+  }*/
 
+  /*
   @media screen and ( max-width: 450px) { 
     .job-col {
   	  width: 100%;
     }
   }
+  */
 
-  @media screen and ( max-width: 920px) { 
+  @media screen and ( max-width: 768px) { 
 
    .col-left,
    .col-right{
@@ -364,3 +421,5 @@ section h3{
     padding-bottom: 20px;
   }
 }
+
+
